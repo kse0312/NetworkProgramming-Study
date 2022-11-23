@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Arrays;
 
-public class ImageClient {
+public class G_ImageClient {
     public static void main(String[] args) throws IOException {
         //앞에꺼 서버 뒤에꺼 client
         Socket socket = new Socket("172.29.48.1",3000, null, 5004);

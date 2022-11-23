@@ -7,7 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketAddress;
 
-public class ImageServer {
+public class G_ImageServer {
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket();
         SocketAddress address = new InetSocketAddress("172.29.48.1",3000);

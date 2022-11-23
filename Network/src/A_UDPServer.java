@@ -2,7 +2,7 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 /** UDPServer
  *  2022/09/07
- *  UDP 서버 열기
+ *  UDP 서버 열기 -> Client에게서 받은 정보 출력
  */
 class A_UDPServer {
     public static void main(String[] args){

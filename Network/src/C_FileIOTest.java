@@ -24,7 +24,6 @@ public class C_FileIOTest {
             while(in.available()>0){
                 System.out.print((char) in.read());
             }
-
              */
             /* 파일 쓰기
             FileOutputStream out = new FileOutputStream("./sample.txt");
@@ -32,7 +31,6 @@ public class C_FileIOTest {
                 //System.out.println((char)i);
                 out.write(i);
             }
-
              */
         }catch (IOException e){
             e.printStackTrace();
