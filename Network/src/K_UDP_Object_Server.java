@@ -2,7 +2,7 @@ import java.io.*;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-
+import java.util.Arrays;
 /**
  * 직렬화 Serialization
  * 서버와 클라이언트에 동일한 클래스 필요
@@ -22,6 +22,8 @@ public class K_UDP_Object_Server
             InetAddress serverAddress = InetAddress.getByName("127.0.0.1");
             DatagramPacket packet = new DatagramPacket(buffer, buffer.length,serverAddress,3000);
             socket.send(packet);
+            System.out.println("Packet Send!");
+            System.out.println(Arrays.toString(packet.getData()));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
